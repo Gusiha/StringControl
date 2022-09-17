@@ -103,5 +103,18 @@ namespace StringControl
                 return strings[index];
             } 
         }
+
+        public int Search(string str)
+        {
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (str == strings[i])
+                {
+                    return i;
+                }
+            }
+
+            return -1;
+        }
     }
 }
